@@ -1,0 +1,452 @@
+.header {
+  background: none;
+  padding: 20px 0;
+  color: #df1a1a;
+  box-shadow: 0 0 5px rgba(0, 128, 192, 0.2); /* Light blue box shadow */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+  .header.scrolled {
+    background-color: #cdeac0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-link {
+    color: #333;
+    margin-right: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #fc9797;
+    transform: scale(1.1);
+  }
+  
+  .fas.fa-star {
+    font-size: 20px;
+    margin-left: 10px;
+    animation: spin infinite 5s linear;
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  @media (max-width: 768px) {
+    .nav-link {
+      margin: 5px;
+    }
+  }
+  
+  .explore-btn {
+    border-radius: 10px;
+    font-weight: lighter;
+  }
+  
+
+  .resource-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  
+  .resource-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .resource-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline from links */
+    color: #333;
+  }
+  
+  .resource-item:hover {
+    background-color: #eee; /* Add a background color on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ffcad4;
+    background-image: url("wbg2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  
+  body:after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit; /* Inherit background image from body */
+    filter: blur(5px);
+    z-index: -1; /* Place behind the content */
+  }
+  
+  
+  .container {
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    
+  }
+
+  /* .container1 {
+    padding: 50px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #f0f0f0 0%, #d9e2ee 20%, #c2d5eb 40%, #adc8e6 60%, #97bdd1 80%, #82b0cd 100%);
+    background-color: #ffe5d9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  } */
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 1.1rem;
+    color: #777;
+    line-height: 1.5;
+  }
+  .impact {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  .impact div {
+    flex: 1 0 33.33%;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+  }
+  .impact div h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .impact div ul {
+    list-style: none;
+    padding: 0;
+  }
+  .impact div li {
+    margin-bottom: 5px;
+  }
+  .solutions {
+    margin-top: 50px;
+  
+  }
+.solutions ul {
+  list-style: none;
+  padding: 0;
+}
+.solutions ul li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.solutions ul li i {
+  font-size: 1.2rem;
+  color: #4CAF50;
+  margin-right: 10px;
+}
+  
+
+.container {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.water-saving-tip {
+  background-color: whitesmoke;
+  border: 3px solid #283618;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 5.2);
+}
+
+.water-saving-tip h3 {
+  margin-bottom: 15px;
+}
+
+.container {
+  padding: 15px;
+}
+
+.gif-container {
+  display: flex; /* Arrange GIFs horizontally */
+  flex-wrap: wrap; /* GIFs can wrap to next line if needed */
+  justify-content: space-between; /* Distribute GIFs evenly */
+}
+
+.gif-container img {
+  margin: 10px; /* Add some margin between GIFs */
+  width: 300px; /* Adjust width as needed */
+  opacity: 0; /* Initially hide GIFs */
+  animation: fadeIn 1s ease-in-out forwards; /* Animation for fade-in */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-on-scroll {
+  animation-delay: 0.5s; /* Delay animation for better scrolling effect */
+}
+
+/* Adjust these values for different scroll positions and animation durations */
+.fade-on-scroll:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.fade-on-scroll:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
+.fade-in {
+  opacity: 0; /* Initially hide the paragraph */
+  animation: fadeIn 1s ease-in-out forwards; /* Animation for fade-in */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Reset styles for a cleaner base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  padding: 1rem 2rem;
+}
+
+.header h1 a {
+  color: #fff; /* White text for better contrast */
+}
+
+.header .fas.fa-star {
+  color: #fff; /* White star icon for better contrast */
+  font-size: 1.5em;
+  margin-left: 1rem;
+}
+
+.nav-link {
+  color: #34495e;
+  margin-right: 1rem;
+}
+
+.nav-link.active {
+  font-weight: bold;
+}
+
+/* Style the "Contact" link differently */
+.link {
+  color: #f39c12; /* Matches "Economic Impact" color */
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #f0545e; /* Red from the gradient */
+  border-color: #f0545e; /* Red for border as well */
+}
+
+/* New styles for header-inner and curved-gradient */
+.header-inner {
+  position: relative;
+}
+
+.curved-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place behind the text content */
+}
+
+.header h1 a {
+  color: #34495e;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.header-inner {
+  position: relative;
+}
+
+.curved-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+.custom-btn {
+  background-color: transparent;
+  border: none; /* Remove border */
+  color: #34495e; /* Adjust text color as needed */
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)); /* Slight transparency gradient */
+}
+
+
+/* Styles for impact container */
+.impact-container {
+  background-color: #e0f2f1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center; /* Center text within container */
+}
+
+.impact-container h3 {
+  margin-bottom: 1rem;
+}
+
+.impact-container a {
+  color: inherit; /* Inherit color from parent (impact-container) */
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* You can add hover styles for impact container here if desired */
+
+
+
+
+/* Styles for impact container */
+.impact-container {
+  background-color: #e0f2f1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center; /* Center text within container */
+  transition: transform 0.3s ease-in-out;  /* Animation for hover effect */
+}
+
+.impact-container h3 {
+  margin-bottom: 1rem;
+}
+
+.impact-container a {
+  color: inherit; /* Inherit color from parent (impact-container) */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.impact-container:hover {
+  transform: translateY(-5px);  /* Move the item up on hover */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Consider using a CSS reset stylesheet here */
+
+#center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adi {
+  width: 1200px; /* Adjust width as needed */
+}
+
+
+/* Replace with your theme's styles */
+.themed-container {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.detail.pop-out {
+  text-align: center;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.detail.pop-out:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.circle-image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 10px;
+}
+
+h3 {
+  margin-bottom: 5px;
+}
+
+.owner-name {
+  color: #333;
+}
+
+
+.circle-image {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+}
+
+.card-text {
+  line-height: 1.5;
+}
+
+/* Customize these styles to match your website's theme */
+.circle-image {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+}
+
+.card-text {
+  line-height: 1.5; /* Increase line spacing for readability */
+}
+
+.pop-out {
+  transition: transform 0.2s ease-in-out; /* Add transition for smooth pop-out effect */
+}
+
+.pop-out:hover {
+  transform: scale(1.05); /* Increase scale slightly on hover */
+}
